@@ -1,0 +1,4 @@
+<h3> Added {{count}} students </h3>
+{% for item in students %}
+    <li>{{ item.id }} {{ item.first_name }} {{ item.last_name }} {{ item.birth_date }}</li>
+{% endfor %}
