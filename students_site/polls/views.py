@@ -24,7 +24,7 @@ def get_students(request):
             f"<h3>Error! Enter count=(a natural number from 1 to 100)</h3>"
         )
     if count > 100 or count <= 0:
-        return HttpResponse(f"<h3>Error! Enter a natural number from 1 to 100</h3>")
+        return HttpResponse(f'<h3>Error! Enter a natural number from 1 to 100</h3>')
     for _ in range(count):
         Students.objects.create(
             first_name=fake.first_name(),
